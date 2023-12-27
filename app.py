@@ -9,7 +9,7 @@ import time
 
 
 def generate_notes(textBit):
-    openai.api_key = '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'
+    openai.api_key = #APIKEYHERE
     text = "Generate notes in bullet format regarding the content of the text that you are provided. Be sure to include important information, key terms and their explanations, and summaries. ALL RESPONSES MUST BE LESS THAN 2000 CHARACTERS. Bold all key terms and paper titles. ONLY GENERATE 1 KEY BULLET POINT. ONLY USE BULLET POINTS TO FORMAT NOT DASHES(Sub-Bullets are allowed). Here is the text: " + textBit
     response = openai.Completion.create(
         model="text-davinci-003",
